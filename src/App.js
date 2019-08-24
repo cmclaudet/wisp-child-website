@@ -83,7 +83,6 @@ class App extends React.Component {
       isMenuOpen: false,
       selectedSubPage: this.props.location.pathname
     };
-    console.log(this.state.selectedSubPage)
   }
 
   showMenu() {
