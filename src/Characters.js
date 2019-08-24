@@ -1,12 +1,59 @@
 import React from 'react';
 import './index.css';
+import { withRouter } from 'react-router-dom'
+import mylo_profile from './res/characters/mylo-neutral.png';
+import ademia_profile from './res/characters/ademia-neutral.png';
+import nate_profile from './res/characters/nate-neutral.png';
+import arthur_profile from './res/characters/arthur-neutral.png';
 
-class Characters extends React.Component {
+class CharacterProfile extends React.Component {
   render() {
     return (
-        <h1>Characters</h1>
+      <div className="creator-profile">
+        <h2>{this.props.name}</h2>
+        <img className="character-profile__picture"
+          src={this.props.source}
+          alt={this.props.alt}
+        />
+        <p>{this.props.description}</p>
+      </div>
     )
   }
 }
 
-export default Characters
+
+class Characters extends React.Component {
+  render() {
+    return (
+      <div className='main'>
+        <h1 className="title-text-characters">Characters</h1>
+        <CharacterProfile
+          source={mylo_profile}
+          alt="mylo"
+          name="Mylo"
+          description="Mylo is adorable. Just look at them. Everyone loves Mylo."
+        />
+        <CharacterProfile
+          source={ademia_profile}
+          alt="ademia"
+          name="Ademia"
+          description="Ademia is a beast. She is the coolest character. Ridiculously smart and gets obsessed. She loves Mylo more than life itself."
+        />
+        <CharacterProfile
+          source={nate_profile}
+          alt="nate"
+          name="Nate"
+          description="Nate likes the idea of running a business and making lots of money. He assumes Mylo will help him do it. He wants to make even more money than his Dad."
+        />
+        <CharacterProfile
+          source={arthur_profile}
+          alt="arthur"
+          name="Arthur"
+          description="Arthur is also a beast. Actually everyone in this game is a beast. Arthur likes money. He works with Ademia because she makes him money. Life is good."
+        />
+      </div>
+    )
+  }
+}
+
+export default withRouter(Characters)

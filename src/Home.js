@@ -5,8 +5,6 @@ import nate_shout from './res/nate-shout.png';
 import orchard from './res/orchard.png';
 import village_girl from './res/village-girl.png';
 import catherine_picture from './res/catherine-picture.jpg';
-import email_logo from './res/email-logo.png';
-import twitter_logo from './res/twitter-logo.png';
 
 class GameSnippet extends React.Component {
   render() {
@@ -36,26 +34,6 @@ class CreatorProfile extends React.Component {
         <h2>{this.props.name}</h2>
         <p>{this.props.description}</p>
       </div>
-    )
-  }
-}
-
-class ContactInfo extends React.Component {
-  render() {
-    return (
-      <div className="contact-info">
-        {this.props.widgets}
-      </div>
-    )
-  }
-}
-
-class ContactWidget extends React.Component {
-  render() {
-    return (
-      <a href={this.props.link}>
-        <img src={this.props.source} alt={this.props.alt} className="contact-widget"/>
-      </a>
     )
   }
 }
@@ -103,12 +81,6 @@ class Home extends React.Component {
           alt="christopher picture"
           name="Christopher Claudet"
           description="He is also hungry. And he does beast. So much feasting though. He is the fattest in the family."
-        />
-        <ContactInfo
-          widgets={
-            [<ContactWidget key="email" link="mailto:cmclaudet@gmail.com?Subject=Hello" source={email_logo} alt="email logo"/>,
-            <ContactWidget key="twitter" link="https://twitter.com/beastgamestudio" source={twitter_logo} alt="twitter logo"/>]
-          }
         />
       </div>
     )
