@@ -216,7 +216,7 @@ font-family: 'Open Sans', sans-serif;
   margin: 0px 10px;
 }
 
-.icon-border {
+.corner-button {
   position: fixed;
   top: 15px;
   right: 15px;
@@ -233,20 +233,20 @@ font-family: 'Open Sans', sans-serif;
   justify-content: center;
 }
 
-.icon-border__line {
+.corner-button__line {
   width: 25px;
   height: 3px;
   background-color: white;
   border-radius: 10px;
 }
 
-.icon-border__close {
+.corner-button__close {
   color: white;
   font-size: 30px;
   transform: scale(1, 0.8);
 }
 
-.icon-border .icon-border__line {
+.corner-button .corner-button__line {
   margin: 3px 0px;
 }
 

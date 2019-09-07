@@ -11,13 +11,13 @@ export const SubPageEnum = {
 export class CornerButton extends React.Component {
   render() {
       return (
-          <button className="icon-border" onClick={() => this.props.onClick()}>
+          <button className="corner-button" onClick={() => this.props.onClick()}>
             {this.props.showCloseIcon ?
-              <div className="icon-border__close">X</div> :
+              <div className="corner-button__close">X</div> :
               <div>
-                <div className="icon-border__line"></div>
-                <div className="icon-border__line"></div>
-                <div className="icon-border__line"></div>
+                <div className="corner-button__line"></div>
+                <div className="corner-button__line"></div>
+                <div className="corner-button__line"></div>
               </div>
             }
           </button>
