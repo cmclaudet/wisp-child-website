@@ -6,7 +6,6 @@ export const SubPageEnum = {
   HOME: {title: "Home", path: "/"},
   CHARACTERS: {title: "Characters", path: "/characters"},
   CONCEPT_ART: {title: "Concept Art", path: "/concept_art"},
-  COMICS: {title: "Comics", path: "/comics"}
 };
 
 class HamburgerMenu extends React.Component {
@@ -21,11 +20,11 @@ class HamburgerMenu extends React.Component {
   }
 }
 
-class CloseMenuButton extends React.Component {
+export class CloseMenuButton extends React.Component {
   render() {
       return (
           <button className="icon-border" onClick={() => this.props.onClick()}>
-          <div className="icon-border__close">X</div>
+            <div className="icon-border__close">X</div>
           </button>
       )
   }
@@ -51,11 +50,6 @@ class Menu extends React.Component {
                       isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.CONCEPT_ART.path}
                       title={SubPageEnum.CONCEPT_ART.title}
                       onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.CONCEPT_ART.path)}
-                  />
-                  <SubPageButton
-                      isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.COMICS.path}
-                      title={SubPageEnum.COMICS.title}
-                      onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.COMICS.path)}
                   />
               </div>
           </div>

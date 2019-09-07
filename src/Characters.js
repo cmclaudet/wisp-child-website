@@ -26,7 +26,7 @@ class Characters extends React.Component {
   render() {
     return (
       <div className='main'>
-        <h1 className="title-text-characters">Characters</h1>
+        <h1 className="banner-title-text">Characters</h1>
         <CharacterProfile
           source={mylo_profile}
           alt="mylo"

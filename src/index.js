@@ -6,6 +6,7 @@ import App from './App';
 import { SubPageEnum } from './App';
 import Home from './Home';
 import Characters from './Characters';
+import ConceptArt from './ConceptArt';
 import * as serviceWorker from './serviceWorker';
 import email_logo from './res/email-logo.png';
 import twitter_logo from './res/twitter-logo.png';
@@ -38,6 +39,7 @@ const router = (
             <Switch>
                 <Route exact path={SubPageEnum.HOME.path} component={Home} />
                 <Route path={SubPageEnum.CHARACTERS.path} component={Characters} />
+                <Route path={SubPageEnum.CONCEPT_ART.path} component={ConceptArt} />
             </Switch>
             <ContactInfo
                 widgets={

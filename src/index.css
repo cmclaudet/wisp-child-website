@@ -109,11 +109,11 @@ font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
-.main .title-text-characters {
+.main .banner-title-text {
   margin-bottom: 40px;
 }
 
-.title-text-characters {
+.banner-title-text {
   padding: 20px 0px;
   text-align: center;
   width: 100%;
@@ -284,4 +284,12 @@ font-family: 'Open Sans', sans-serif;
 .subpage-button--selected {
   width: 100%;
   background-color: rgb(88, 0, 88);
+}
+
+.concept-art-piece {
+  width: 100%;
+}
+
+.preview-window {
+  overflow: hidden;
 }
