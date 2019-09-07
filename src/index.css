@@ -247,7 +247,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .icon-border .icon-border__line {
-  margin: 2px 0px;
+  margin: 3px 0px;
 }
 
 .menu {
@@ -291,5 +291,5 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .preview-window {
-  overflow: hidden;
+  position: absolute;
 }

@@ -8,23 +8,18 @@ export const SubPageEnum = {
   CONCEPT_ART: {title: "Concept Art", path: "/concept_art"},
 };
 
-class HamburgerMenu extends React.Component {
+export class CornerButton extends React.Component {
   render() {
       return (
           <button className="icon-border" onClick={() => this.props.onClick()}>
-          <div className="icon-border__line"></div>
-          <div className="icon-border__line"></div>
-          <div className="icon-border__line"></div>
-          </button>
-      )
-  }
-}
-
-export class CloseMenuButton extends React.Component {
-  render() {
-      return (
-          <button className="icon-border" onClick={() => this.props.onClick()}>
-            <div className="icon-border__close">X</div>
+            {this.props.showCloseIcon ?
+              <div className="icon-border__close">X</div> :
+              <div>
+                <div className="icon-border__line"></div>
+                <div className="icon-border__line"></div>
+                <div className="icon-border__line"></div>
+              </div>
+            }
           </button>
       )
   }
@@ -79,15 +74,9 @@ class App extends React.Component {
     };
   }
 
-  showMenu() {
+  toggleMenu() {
       this.setState({
-          isMenuOpen: true
-      })
-  }
-
-  hideMenu() {
-      this.setState({
-          isMenuOpen: false
+          isMenuOpen: !this.state.isMenuOpen
       })
   }
 
@@ -109,8 +98,7 @@ class App extends React.Component {
               onClickSubpageButton = {(page, path) => this.onSubPageButtonClick(page, path)}
           />
           }
-          {!this.state.isMenuOpen && <HamburgerMenu onClick = {() => this.showMenu()}/>}
-          {this.state.isMenuOpen && <CloseMenuButton onClick = {() => this.hideMenu()}/>}
+          {<CornerButton showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>}
         </div>
     )
   }

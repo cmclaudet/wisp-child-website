@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { withRouter } from 'react-router-dom'
 import main_characters from './res/concept-art/main-characters.png';
-import { CloseMenuButton } from './App';
+import { CornerButton } from './App';
 
 class ConceptArt extends React.Component {
     constructor(props) {
@@ -31,7 +31,7 @@ class ConceptArt extends React.Component {
                 <div className="preview-window">
                     <img src={this.state.previewImage} alt="preview image"/>
                     <div>
-                        <CloseMenuButton onClick={() => this.onClosePreviewWindow()}/>
+                        <CornerButton showCloseIcon={true} onClick={() => this.onClosePreviewWindow()}/>
                     </div>
                 </div> :
                 <div className='main'>
