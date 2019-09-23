@@ -25,7 +25,7 @@ class CharacterProfile extends React.Component {
 class Characters extends React.Component {
   render() {
     return (
-      <div className='main'>
+      <div className='characters main'>
         <h1 className="banner-title-text">Characters</h1>
         <CharacterProfile
           source={mylo_profile}

@@ -90,16 +90,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="app">
         {this.state.isMenuOpen &&
           <Menu
               selectedSubPage = {this.state.selectedSubPage}
               onClickOutside = {() => this.hideMenu()} 
               onClickSubpageButton = {(page, path) => this.onSubPageButtonClick(page, path)}
           />
-          }
-          {<CornerButton showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>}
-        </div>
+        }
+        <CornerButton showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>
+        {this.props.children}
+      </div>
     )
   }
 }

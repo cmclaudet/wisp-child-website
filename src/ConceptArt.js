@@ -26,17 +26,13 @@ class ConceptArt extends React.Component {
 
     render() {
       return (
-        <div className="concept-art">
-            {this.state.previewImage ? 
+        <div className="concept-art main">
+            <h1 className="banner-title-text">Concept Art</h1>
+            <img className="concept-art-piece" src={main_characters} alt="main characters" onClick={() => this.onOpenPreviewWindow(main_characters)}/>
+            {this.state.previewImage &&
                 <div className="preview-window">
                     <img src={this.state.previewImage} alt="preview image"/>
-                    <div>
-                        <CornerButton showCloseIcon={true} onClick={() => this.onClosePreviewWindow()}/>
-                    </div>
-                </div> :
-                <div className='main'>
-                    <h1 className="banner-title-text">Concept Art</h1>
-                    <img className="concept-art-piece" src={main_characters} alt="main characters" onClick={() => this.onOpenPreviewWindow(main_characters)}/>
+                    <CornerButton showCloseIcon={true} onClick={() => this.onClosePreviewWindow()}/>
                 </div>
             }
         </div>

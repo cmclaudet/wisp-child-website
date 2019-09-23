@@ -93,8 +93,13 @@ font-family: 'Open Sans', sans-serif;
   line-height: 20px
 }
 
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
 .main {
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,4 +297,11 @@ font-family: 'Open Sans', sans-serif;
 
 .preview-window {
   position: absolute;
+  width: 100vw;
+  top: 0;
+  overflow: auto;
+}
+
+.preview-window img {
+  max-height: 100vh;
 }

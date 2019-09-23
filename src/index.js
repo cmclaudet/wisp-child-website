@@ -34,20 +34,19 @@ class ContactWidget extends React.Component {
 
 const router = (
     <Router>
-        <div>
-            <App/>
-            <Switch>
-                <Route exact path={SubPageEnum.HOME.path} component={Home} />
-                <Route path={SubPageEnum.CHARACTERS.path} component={Characters} />
-                <Route path={SubPageEnum.CONCEPT_ART.path} component={ConceptArt} />
-            </Switch>
-            <ContactInfo
-                widgets={
-                    [<ContactWidget key="email" link="mailto:cmclaudet@gmail.com?Subject=Hello" source={email_logo} alt="email logo"/>,
-                    <ContactWidget key="twitter" link="https://twitter.com/beastgamestudio" source={twitter_logo} alt="twitter logo"/>]
-                }
-            />
-        </div>
+            <App>
+                <Switch>
+                    <Route exact path={SubPageEnum.HOME.path} component={Home} />
+                    <Route path={SubPageEnum.CHARACTERS.path} component={Characters} />
+                    <Route path={SubPageEnum.CONCEPT_ART.path} component={ConceptArt} />
+                </Switch>
+                <ContactInfo
+                    widgets={
+                        [<ContactWidget key="email" link="mailto:cmclaudet@gmail.com?Subject=Hello" source={email_logo} alt="email logo"/>,
+                        <ContactWidget key="twitter" link="https://twitter.com/beastgamestudio" source={twitter_logo} alt="twitter logo"/>]
+                    }
+                />
+            </App>
     </Router>
 )
 
