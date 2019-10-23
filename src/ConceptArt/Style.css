@@ -1,0 +1,14 @@
+.concept-art-piece {
+    width: 100%;
+}
+  
+.preview-window {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    overflow: auto;
+}
+  
+.preview-window img {
+    max-height: 100vh;
+}

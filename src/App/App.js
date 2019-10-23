@@ -1,10 +1,11 @@
 import React from 'react';
-import './index.css';
+import './Style.css';
+import '../Shared.css';
 import { withRouter } from 'react-router-dom'
-import email_logo from './res/email-logo.png';
-import twitter_logo from './res/twitter-logo.png';
-import { SubPageEnum } from './SubPageEnum';
-import { CornerButton } from './Shared';
+import email_logo from '../res/email-logo.png';
+import twitter_logo from '../res/twitter-logo.png';
+import { SubPageEnum } from '../SubPageEnum';
+import { CornerButton } from '../CornerButton';
 
 
 class ContactInfo extends React.Component {

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
-import './index.css';
-import App from './App';
+import './Shared.css';
+import App from './App/App';
 import { SubPageEnum } from './SubPageEnum';
-import Home from './Home';
-import Characters from './Characters';
-import ConceptArt from './ConceptArt';
+import Home from './Home/Home';
+import Characters from './Characters/Characters';
+import ConceptArt from './ConceptArt/ConceptArt.js';
 import * as serviceWorker from './serviceWorker';
 
 const router = (

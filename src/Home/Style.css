@@ -1,0 +1,66 @@
+.game-snippet {
+    margin-top: 60px;
+    padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.game-snippet:first-of-type {
+  margin-top: 0;
+}
+
+.game-snippet .game-snippet__text {
+  margin-bottom: 20px;
+}
+
+.game-snippet__text .game-snippet__text__header {
+  margin-bottom: 20px;
+}
+
+.game-snippet__screenshot {
+  width: 100%;
+}
+
+.main .download-button {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.download-button {
+  padding: 32px 54px;
+  background-color: orange;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main .creator-profile {
+  margin: 0px 20px 60px 20px;
+}
+
+.main .creator-profile:last-of-type {
+  margin-bottom: 0;
+}
+
+.creator-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.creator-profile * {
+  margin-bottom: 20px;
+}
+
+.creator-profile__picture {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}

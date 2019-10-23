@@ -1,13 +1,14 @@
 import React from 'react';
-import './index.css';
+import './Style.css';
+import '../Shared.css';
 import { withRouter } from 'react-router-dom'
-import main_characters from './res/concept-art/main-characters.png';
-import ademia_and_mylo from './res/concept-art/ademia-and-mylo.png';
-import ademia_dialogue from './res/concept-art/ademia-dialogue.png';
-import mylo_tree from './res/concept-art/mylo-tree.png';
-import mylo_and_building from './res/concept-art/mylo-and-building.png';
-import buildings from './res/concept-art/buildings.png';
-import { CornerButton } from './Shared';
+import main_characters from '../res/concept-art/main-characters.png';
+import ademia_and_mylo from '../res/concept-art/ademia-and-mylo.png';
+import ademia_dialogue from '../res/concept-art/ademia-dialogue.png';
+import mylo_tree from '../res/concept-art/mylo-tree.png';
+import mylo_and_building from '../res/concept-art/mylo-and-building.png';
+import buildings from '../res/concept-art/buildings.png';
+import { CornerButton } from '../CornerButton';
 
 class ConceptArt extends React.Component {
     constructor(props) {

@@ -1,10 +1,11 @@
 import React from 'react';
-import './index.css';
-import title from './res/title.png';
-import nate_shout from './res/nate-shout.png';
-import orchard from './res/orchard.png';
-import village_girl from './res/village-girl.png';
-import catherine_picture from './res/catherine-picture.jpg';
+import './Style.css';
+import '../Shared.css';
+import title from '../res/title.png';
+import nate_shout from '../res/nate-shout.png';
+import orchard from '../res/orchard.png';
+import village_girl from '../res/village-girl.png';
+import catherine_picture from '../res/catherine-picture.jpg';
 
 class GameSnippet extends React.Component {
   render() {

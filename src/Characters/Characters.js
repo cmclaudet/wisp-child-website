@@ -1,10 +1,11 @@
 import React from 'react';
-import './index.css';
+import './Style.css';
+import '../Shared.css';
 import { withRouter } from 'react-router-dom'
-import mylo_profile from './res/characters/mylo-neutral.png';
-import ademia_profile from './res/characters/ademia-neutral.png';
-import nate_profile from './res/characters/nate-neutral.png';
-import arthur_profile from './res/characters/arthur-neutral.png';
+import mylo_profile from '../res/characters/mylo-neutral.png';
+import ademia_profile from '../res/characters/ademia-neutral.png';
+import nate_profile from '../res/characters/nate-neutral.png';
+import arthur_profile from '../res/characters/arthur-neutral.png';
 
 class CharacterProfile extends React.Component {
   render() {
