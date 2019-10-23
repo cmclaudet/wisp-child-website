@@ -1,28 +1,30 @@
 import React from 'react';
 import './index.css';
 import { withRouter } from 'react-router-dom'
+import email_logo from './res/email-logo.png';
+import twitter_logo from './res/twitter-logo.png';
+import { SubPageEnum } from './SubPageEnum';
+import { CornerButton } from './Shared';
 
-export const SubPageEnum = {
-  HOME: {title: "Home", path: "/"},
-  CHARACTERS: {title: "Characters", path: "/characters"},
-  CONCEPT_ART: {title: "Concept Art", path: "/concept_art"},
-};
 
-export class CornerButton extends React.Component {
-  render() {
+class ContactInfo extends React.Component {
+    render() {
       return (
-          <button className="corner-button" onClick={() => this.props.onClick()}>
-            {this.props.showCloseIcon ?
-              <div className="corner-button__close">X</div> :
-              <div>
-                <div className="corner-button__line"></div>
-                <div className="corner-button__line"></div>
-                <div className="corner-button__line"></div>
-              </div>
-            }
-          </button>
+        <div className="contact-info">
+          {this.props.widgets}
+        </div>
       )
-  }
+    }
+}
+  
+class ContactWidget extends React.Component {
+    render() {
+        return (
+        <a href={this.props.link}>
+            <img src={this.props.source} alt={this.props.alt} className="contact-widget"/>
+        </a>
+        )
+    }
 }
 
 class Menu extends React.Component {
@@ -94,12 +96,18 @@ class App extends React.Component {
         {this.state.isMenuOpen &&
           <Menu
               selectedSubPage = {this.state.selectedSubPage}
-              onClickOutside = {() => this.hideMenu()} 
+              onClickOutside = {() => this.toggleMenu()} 
               onClickSubpageButton = {(page, path) => this.onSubPageButtonClick(page, path)}
           />
         }
         <CornerButton showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>
         {this.props.children}
+        <ContactInfo
+            widgets={
+                [<ContactWidget key="email" link="mailto:cmclaudet@gmail.com?Subject=Hello" source={email_logo} alt="email logo"/>,
+                <ContactWidget key="twitter" link="https://twitter.com/beastgamestudio" source={twitter_logo} alt="twitter logo"/>]
+            }
+        />
       </div>
     )
   }
