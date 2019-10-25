@@ -36,6 +36,10 @@ class ConceptArt extends React.Component {
             <h1 className="banner-title-text">Concept Art</h1>
             <img className="concept-art-piece" src={main_characters} alt="main characters" onClick={() => this.onOpenPreviewWindow(main_characters)}/>
             <img className="concept-art-piece" src={ademia_and_mylo} alt="ademia and mylo" onClick={() => this.onOpenPreviewWindow(ademia_and_mylo)}/>
+            <img className="concept-art-piece" src={ademia_dialogue} alt="ademia and mylo" onClick={() => this.onOpenPreviewWindow(ademia_dialogue)}/>
+            <img className="concept-art-piece" src={mylo_tree} alt="ademia and mylo" onClick={() => this.onOpenPreviewWindow(mylo_tree)}/>
+            <img className="concept-art-piece" src={mylo_and_building} alt="ademia and mylo" onClick={() => this.onOpenPreviewWindow(mylo_and_building)}/>
+            <img className="concept-art-piece" src={buildings} alt="ademia and mylo" onClick={() => this.onOpenPreviewWindow(buildings)}/>
             {this.state.previewImage &&
                 <div className="preview-window">
                     <img src={this.state.previewImage} alt="preview image"/>

@@ -119,10 +119,6 @@ font-family: 'Open Sans', sans-serif;
   background-color: purple;
 }
 
-.background {
-  width: 1300px;
-}
-
 .corner-button {
   position: fixed;
   top: 15px;
