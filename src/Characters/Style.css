@@ -1,4 +1,18 @@
+.character-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
+  max-width: 1000px;
+}
+
 .character-profile__picture {
   width: 100%;
+  max-width: 400px;
   background-color: rgb(221, 213, 177);
+}
+
+.character-profile__description {
+  max-width: 400px;
 }
