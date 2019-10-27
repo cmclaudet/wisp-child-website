@@ -1,4 +1,4 @@
-const pathRoot = "wisp-child-website";
+const pathRoot = "/wisp-child-website";
 
 export const SubPageEnum = {
     HOME: {title: "Home", path: `${pathRoot}/`},
