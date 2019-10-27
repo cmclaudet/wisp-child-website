@@ -1,6 +1,14 @@
 .concept-art-piece {
     width: 100%;
-    margin-bottom: 40px;
+    max-width: 400px;
+    margin: 40px;
+}
+
+.concept-art-pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
   
 .preview-window {
@@ -8,8 +16,27 @@
     width: 100vw;
     top: 0;
     overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-  
+
 .preview-window img {
-    max-height: 100vh;
+    max-height: 800px;
+    max-width: 1000px;
+    z-index: 2;
+}
+
+.preview-window__background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+}
+
+.preview-window .corner-button {
+    z-index: 3;
 }
