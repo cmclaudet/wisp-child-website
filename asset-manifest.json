@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/wisp-child-website/./static/css/main.8f0e9739.chunk.css",
+    "main.js": "/wisp-child-website/./static/js/main.b99c6cb4.chunk.js",
+    "main.js.map": "/wisp-child-website/./static/js/main.b99c6cb4.chunk.js.map",
+    "runtime~main.js": "/wisp-child-website/./static/js/runtime~main.802a5994.js",
+    "runtime~main.js.map": "/wisp-child-website/./static/js/runtime~main.802a5994.js.map",
+    "static/js/2.409b5982.chunk.js": "/wisp-child-website/./static/js/2.409b5982.chunk.js",
+    "static/js/2.409b5982.chunk.js.map": "/wisp-child-website/./static/js/2.409b5982.chunk.js.map",
+    "index.html": "/wisp-child-website/./index.html",
+    "precache-manifest.644cabd4fadde0934ecfabef29dfd340.js": "/wisp-child-website/./precache-manifest.644cabd4fadde0934ecfabef29dfd340.js",
+    "service-worker.js": "/wisp-child-website/./service-worker.js",
+    "static/css/main.8f0e9739.chunk.css.map": "/wisp-child-website/./static/css/main.8f0e9739.chunk.css.map",
+    "static/media/ademia-and-mylo.png": "/wisp-child-website/./static/media/ademia-and-mylo.c4b9dd20.png",
+    "static/media/ademia-dialogue.png": "/wisp-child-website/./static/media/ademia-dialogue.59ab156e.png",
+    "static/media/ademia-neutral.png": "/wisp-child-website/./static/media/ademia-neutral.f8419ae1.png",
+    "static/media/arthur-neutral.png": "/wisp-child-website/./static/media/arthur-neutral.f7d8366e.png",
+    "static/media/buildings.png": "/wisp-child-website/./static/media/buildings.4cf7916d.png",
+    "static/media/catherine-picture.jpg": "/wisp-child-website/./static/media/catherine-picture.a2c060df.jpg",
+    "static/media/email-logo.png": "/wisp-child-website/./static/media/email-logo.78abd247.png",
+    "static/media/main-characters.png": "/wisp-child-website/./static/media/main-characters.b14c0866.png",
+    "static/media/mylo-and-building.png": "/wisp-child-website/./static/media/mylo-and-building.641640f1.png",
+    "static/media/mylo-neutral.png": "/wisp-child-website/./static/media/mylo-neutral.1aacd2fb.png",
+    "static/media/mylo-tree.png": "/wisp-child-website/./static/media/mylo-tree.0fa0ddf3.png",
+    "static/media/nate-neutral.png": "/wisp-child-website/./static/media/nate-neutral.ec91f526.png",
+    "static/media/nate-shout.png": "/wisp-child-website/./static/media/nate-shout.2b587d00.png",
+    "static/media/orchard.png": "/wisp-child-website/./static/media/orchard.f07220fe.png",
+    "static/media/title.png": "/wisp-child-website/./static/media/title.fd84261b.png",
+    "static/media/twitter-logo.png": "/wisp-child-website/./static/media/twitter-logo.2451ce30.png",
+    "static/media/village-girl.png": "/wisp-child-website/./static/media/village-girl.2912ab69.png"
+  }
+}
