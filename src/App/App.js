@@ -33,25 +33,49 @@ class Menu extends React.Component {
       return (
           <div className="menu">
               <div className="menu__outside" onClick={this.props.onClickOutside}></div>
-              <div className="menu__inside">
-                  <SubPageButton
-                      isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.HOME.path}
-                      title={SubPageEnum.HOME.title}
-                      onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.HOME.path)}
-                  />
-                  <SubPageButton
-                      isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.CHARACTERS.path}
-                      title={SubPageEnum.CHARACTERS.title}
-                      onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.CHARACTERS.path)}
-                  />
-                  <SubPageButton
-                      isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.CONCEPT_ART.path}
-                      title={SubPageEnum.CONCEPT_ART.title}
-                      onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.CONCEPT_ART.path)}
-                  />
-              </div>
+              <MenuCore class="menu__inside" selectedSubPage={this.props.selectedSubPage}
+                        onClickSubpageButton={this.props.onClickSubpageButton}/>
           </div>
       )
+  }
+}
+
+class DesktopMenu extends React.Component {
+  render() {
+    return (
+      <div>
+        <MenuCore 
+          class="menu-desktop"
+          selectedSubPage = {this.props.selectedSubPage}
+          onClickSubpageButton = {(page, path) => this.props.onClickSubpageButton(page, path)}
+        />
+        <h1 className="desktop-title">Wisp Child</h1>
+      </div>
+    )
+  }
+}
+
+class MenuCore extends React.Component {
+  render() { 
+    return (
+      <div className={this.props.class}>
+        <SubPageButton
+            isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.HOME.path}
+            title={SubPageEnum.HOME.title}
+            onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.HOME.path)}
+        />
+        <SubPageButton
+            isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.CHARACTERS.path}
+            title={SubPageEnum.CHARACTERS.title}
+            onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.CHARACTERS.path)}
+        />
+        <SubPageButton
+            isSelectedSubPage={this.props.selectedSubPage === SubPageEnum.CONCEPT_ART.path}
+            title={SubPageEnum.CONCEPT_ART.title}
+            onClickProp={() => this.props.onClickSubpageButton(SubPageEnum.CONCEPT_ART.path)}
+        />
+      </div>
+    )
   }
 }
 
@@ -96,12 +120,16 @@ class App extends React.Component {
       <div className="app">
         {this.state.isMenuOpen &&
           <Menu
-              selectedSubPage = {this.state.selectedSubPage}
               onClickOutside = {() => this.toggleMenu()} 
+              selectedSubPage = {this.state.selectedSubPage}
               onClickSubpageButton = {(page, path) => this.onSubPageButtonClick(page, path)}
           />
         }
-        <CornerButton showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>
+        <CornerButton isMainMenu showCloseIcon={this.state.isMenuOpen} onClick = {() => this.toggleMenu()}/>
+        <DesktopMenu
+          selectedSubPage = {this.state.selectedSubPage}
+          onClickSubpageButton = {(page, path) => this.onSubPageButtonClick(page, path)}
+        />
         {this.props.children}
         <ContactInfo
             widgets={
