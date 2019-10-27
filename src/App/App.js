@@ -21,7 +21,7 @@ class ContactInfo extends React.Component {
 class ContactWidget extends React.Component {
     render() {
         return (
-        <a href={this.props.link}>
+        <a href={this.props.link} target="_blank">
             <img src={this.props.source} alt={this.props.alt} className="contact-widget"/>
         </a>
         )

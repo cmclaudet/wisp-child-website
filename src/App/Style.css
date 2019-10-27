@@ -6,7 +6,7 @@
 
 .contact-info {
     width: 100%;
-    height: 64px;
+    height: 72px;
     background-color: purple;
     display: flex;
     justify-content: center;
@@ -19,6 +19,10 @@
   
 .contact-info .contact-widget {
     margin: 0px 10px;
+}
+
+.desktop-title {
+    display: none;
 }
 
 .menu {
@@ -63,6 +67,7 @@
 
 @media (min-width: 1000px) and (orientation: landscape) {
     .desktop-title {
+        display: block;
         position: fixed;
         top: 20px;
         left: 25px;

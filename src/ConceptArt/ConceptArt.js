@@ -45,7 +45,7 @@ class ConceptArt extends React.Component {
             {this.state.previewImage &&
                 <div className="preview-window">
                     <div className="preview-window__background" onClick={() => this.onClosePreviewWindow()}></div>
-                    <img src={this.state.previewImage} alt="preview image" onClick={() => {}}/>
+                    <img src={this.state.previewImage} alt={this.state.previewImage} onClick={() => {}}/>
                     <CornerButton showCloseIcon={true} onClick={() => this.onClosePreviewWindow()}/>
                 </div>
             }

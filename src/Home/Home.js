@@ -65,7 +65,7 @@ class Home extends React.Component {
           source={village_girl} 
           alt="village girl"
         />
-        <a className="download-button" href='https://beastgamestudios.itch.io/wisp-child'>Download</a>
+        <a className="download-button" href='https://beastgamestudios.itch.io/wisp-child' target="_blank">Download</a>
         <h1 className="title-text">Beast Game Studio</h1>
         <div className="creator-profiles">
           <CreatorProfile

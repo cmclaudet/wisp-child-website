@@ -12,6 +12,13 @@
     width: 100%;
     justify-content: center;
     max-height: 350px;
+    text-align: left;
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .game-snippet {
+    text-align: right;
+  }
 }
 
 .game-snippet:first-of-type {
@@ -21,6 +28,7 @@
 .game-snippet .game-snippet__text {
   margin-bottom: 20px;
   max-width: 500px;
+  padding: 0 10px;
 }
 
 .game-snippet__text .game-snippet__text__header {
@@ -33,10 +41,12 @@
   height: 50%;
   max-width: 500px;
   max-height: 275px;
+  padding: 0 10px;
 }
 
 .game-snippet--flipped {
   flex-direction: row-reverse;
+  text-align: left;
 }
 
 .main .download-button {
