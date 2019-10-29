@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c72c8c9ad69283c4fb82efba96d9dac",
+    "revision": "fbf9e8a6c933543548048b2eee5c0e38",
     "url": "/wisp-child-website/index.html"
   },
   {
-    "revision": "6cd2a25ddc9726a44d10",
+    "revision": "62abceb8f03ce85efa93",
     "url": "/wisp-child-website/static/css/main.f8fccadd.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wisp-child-website/static/js/2.47c63934.chunk.js"
   },
   {
-    "revision": "6cd2a25ddc9726a44d10",
-    "url": "/wisp-child-website/static/js/main.1d50bfc2.chunk.js"
+    "revision": "62abceb8f03ce85efa93",
+    "url": "/wisp-child-website/static/js/main.f39ff4eb.chunk.js"
   },
   {
     "revision": "e3cbbb1f21999deda478",
