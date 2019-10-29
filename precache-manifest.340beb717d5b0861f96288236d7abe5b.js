@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fbf9e8a6c933543548048b2eee5c0e38",
+    "revision": "2bf8606590f50aef3da7d83a78a98457",
     "url": "/wisp-child-website/index.html"
   },
   {
-    "revision": "62abceb8f03ce85efa93",
-    "url": "/wisp-child-website/static/css/main.f8fccadd.chunk.css"
+    "revision": "447b1c445de929f2d618",
+    "url": "/wisp-child-website/static/css/main.75f66f4e.chunk.css"
   },
   {
-    "revision": "5efc4fe9021a74359ca4",
-    "url": "/wisp-child-website/static/js/2.47c63934.chunk.js"
+    "revision": "8463f9d8ba355dbda912",
+    "url": "/wisp-child-website/static/js/2.40f315d3.chunk.js"
   },
   {
-    "revision": "62abceb8f03ce85efa93",
-    "url": "/wisp-child-website/static/js/main.f39ff4eb.chunk.js"
+    "revision": "447b1c445de929f2d618",
+    "url": "/wisp-child-website/static/js/main.9e7dd118.chunk.js"
   },
   {
     "revision": "e3cbbb1f21999deda478",
@@ -44,8 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wisp-child-website/static/media/catherine-picture.a2c060df.jpg"
   },
   {
+    "revision": "e63dd0fe572bb3870f889cdee7d17e82",
+    "url": "/wisp-child-website/static/media/christopher-picture.e63dd0fe.jpg"
+  },
+  {
     "revision": "78abd247f5fda5f97d1a42ac066ab95e",
     "url": "/wisp-child-website/static/media/email-logo.78abd247.png"
+  },
+  {
+    "revision": "ca5ebd9d1852badf574f99a110bc80ec",
+    "url": "/wisp-child-website/static/media/emily-picture.ca5ebd9d.jpg"
   },
   {
     "revision": "b14c0866282ae94b57db36a268f5a533",
